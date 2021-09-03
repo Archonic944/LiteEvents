@@ -1,3 +1,5 @@
+package me.archonic.liteevents.main;
+
 /**
  * Default event class. To write your own event classes specific to your project, make sure to extend this one.
  */
