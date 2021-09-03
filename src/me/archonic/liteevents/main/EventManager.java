@@ -10,6 +10,7 @@ import java.util.Set;
  * A lightweight event manager by Archonic. Credit appreciated, but not required. Regardless, please don't claim it as your own or remove this message. Thanks, and have fun!
  */
 @SuppressWarnings("unused")
+
 public class EventManager {
     private final Set<VerifiedListener> listeners = new HashSet<>();
 
@@ -17,7 +18,7 @@ public class EventManager {
     /**
      * Retrieves the event manager's instance. This instance must be retrieved in order to perform any operation regarding the event manager.
      *
-     * @returns The me.archonic.liteevents.main.EventManager's instance, or a newly initialized me.archonic.liteevents.main.EventManager instance if one has not been set yet
+     * @return The EventManager's instance, or a newly initialized EventManager instance if one has not been set yet
      */
     public static EventManager getEventManager(){
         return instance == null ? init() : instance;
@@ -25,7 +26,7 @@ public class EventManager {
 
     /**
      * Private instance initializer method.
-     * @returns The initialized me.archonic.liteevents.main.EventManager instance
+     * @return The initialized EventManager instance
      */
     private static EventManager init(){
         return instance = new EventManager();
@@ -88,7 +89,7 @@ public class EventManager {
 
     /**
      * Private constructor (suppresses default constructor).
-     * <br>In order to use the me.archonic.liteevents.main.EventManager class, you must retreive an instance of it using {@code me.archonic.liteevents.main.EventManager.getEventManager()}.
+     * <br>In order to use the EventManager class, you must retreive an instance of it using {@code EventManager.getEventManager()}.
      */
     private EventManager(){}
 }
